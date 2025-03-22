@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: zikbap
+    server:
+        port: 8080
+
+    datasource:
+        url: jdbc:mysql://localhost:3306/PMS_DATABASE?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&allowLoadLocalInfile=true
+        username: root
+        password: dlwldms1654
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect
+        show-sql: true
